@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "history-to-phits-tetmesh"
+version = "0.1.0"
+description = "Histology label volume -> conforming PHITS tetrahedral mesh"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Adam Haneberg" }]
+dependencies = [
+    "numpy",
+    "scipy",
+    "itk-elastix",
+    "scikit-image",
+    "meshio",
+    "gmsh",
+]
